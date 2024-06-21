@@ -1,0 +1,83 @@
+.arrowright::before{
+  content: "\21A6";   /* Aggiunge il simbolo allow right prima del testo */
+}
+
+.battery.state::after{
+  content: "Stato carica:";   /* Aggiungi il testo 'Stato carica' in tutti di livello di batteria */
+}
+
+.fully.charged{
+  background-color: #06D001;  /* colore della bateria quando è 100% */
+  border-radius: 5px;
+  height: 20px;
+  width: 350px;  /* livello della bateria 100% */
+}
+
+.low.battery{
+  background-color: rgb(167,0,0);  /* colore della bateria quando è 100% */
+  border-radius: 5px;
+  height: 20px;
+  width: 100px;  /* livello della bateria 100% */
+}
+
+.medium.charged{
+  background-color: orange;  /* colore della bateria quando è 100% */
+  border-radius: 5px;
+  height: 20px;
+  width: 220px;  /* livello della bateria 100% */
+}
+
+.nome.monopattino{
+  font-size: 20px;
+}
+.nome.monopattino::before{
+  content: "Monopatino ";   /* Aggiungi il testo 'Monopatino' in tutti nomi di monopatino */
+}
+
+.titolo{
+  color: #06D001;  /*colore di logo*/
+  margin: 0;
+}
+
+
+body{
+  background-image: url(background.jpg);
+  background-size: cover;  /* questa proprieta fa si che l'imagine si copra lintero schermo. */
+}
+
+body div:first-child{
+  background-color: rgba(0,0,0,0.5) ; /* quadro nero transparente */
+  border-radius: 10px;
+  height: auto;
+  margin:auto;
+  padding: 70px;
+  width: 700px;
+}
+
+footer{
+  color: #06D001;
+  text-align: center;
+}
+footer em::before{
+  color: black;
+  content: "MADE by: ";
+  font-style: normal;
+}
+header{
+  text-align: center;
+}
+img.logo{
+  height: 90px;
+  width: 200px;
+}
+nav{
+  background-color: #06D001;
+  display: flex; /* usa tutti spazio */
+  justify-content: center;  /* buttone in centro */
+  padding: 5px;
+}
+section{
+  color: white;
+  font-size: 12px;
+  margin-top: 10px;
+}
